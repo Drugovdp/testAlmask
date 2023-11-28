@@ -1,0 +1,52 @@
+@import "../styleMixin/styleMixin.scss";
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    background: #ffff;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileMenu {
+        display: block;
+
+        &Box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(2px, 1.3vw, 10px);
+            margin-bottom: 15px;
+
+            &Item {
+                text-align: center;
+                cursor: pointer;
+                
+                &Text {
+                    display: block;
+                    font-size: 12px;
+                    @include font500;
+                }
+                & svg {
+                    fill: #444444;
+                    stroke: #444444;
+                }
+                & a {
+                    color: #444444;
+                }
+                & svg:is(.active) {
+                    fill: #f79f00;
+                    stroke: #f79f00;
+                }
+                & a:is(.active) {
+                    color: #f79f00;
+                }
+            }
+        }
+    }
+}

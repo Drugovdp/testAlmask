@@ -1,0 +1,41 @@
+@import '../styleMixin/styleMixin.scss';
+
+.sectionContact {
+    margin-top: $mt;
+    margin-bottom: 80px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.contentContact {
+    flex-basis: 50%;
+    padding-left: 20px;
+    & p {
+        font-size: $font-size-18-20;
+        @include font500;
+        margin-top: $mt / 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 2%;
+    }
+    .contentContact {
+        flex-basis: 90%;
+        margin-bottom: 20px;
+        .title {
+            text-align: center;
+        }
+        & p {
+        padding-left: 20px;
+        }
+    }
+}

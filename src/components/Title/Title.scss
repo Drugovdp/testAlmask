@@ -1,0 +1,29 @@
+@import '../styleMixin/styleMixin.scss';
+
+.textCenter {
+    text-align: center;
+}
+
+.title {
+    color: #444444;
+    h2 {
+        font-size: clamp(22px, 4.1vw, 48px);
+        @include font600;
+
+        span {
+            color: $primary-color-1;
+        }
+    }
+    h4 {
+        font-size: clamp(18px, 4.1vw, 36px);
+        @include font500;
+    }
+
+    .line {
+        display: inline-block;
+        width: 108px;
+        height: 2px;
+        background: $primary-color-2;
+        margin-top: 4%;
+    }
+}

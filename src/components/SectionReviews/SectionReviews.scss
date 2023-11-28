@@ -1,0 +1,63 @@
+@import "../styleMixin/styleMixin.scss";
+
+.sectionReviews {
+    margin-top: $mt;
+}
+
+.subTitle {
+    @include subTitleText;
+}
+
+.contentReviews {
+    margin-top: $mt / 2;
+}
+
+.itemReviews {
+    box-shadow: 0 0 3px -1px #555;
+    text-align: center;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.itemReviewsImg {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    
+    & img {
+        border-radius: 50%;
+    }
+}
+
+.itemReviewsTitle, .itemReviewsText {
+    margin: $mt / 4 10px $mt / 4 10px;
+}
+
+.itemReviewsTitle {
+    & h4 {
+        font-size: $font-size-18-20;
+        @include font500;
+        color: $primary-color-text;
+    }
+}
+
+.itemReviewsText {
+    & p {
+        font-size: $font-size-14-17;
+        @include font400;
+        color: $primary-color-text;
+    }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0px);
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0px);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 28px;
+}

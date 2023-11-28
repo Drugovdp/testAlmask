@@ -1,0 +1,12 @@
+@import "../styleMixin/styleMixin.scss";
+
+.button {
+    background: #f79f00;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: $font-size-16-18;
+    color: #ffff;
+    @include font400;
+    cursor: pointer;
+}

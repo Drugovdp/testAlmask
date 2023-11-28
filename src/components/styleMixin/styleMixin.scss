@@ -1,0 +1,51 @@
+@mixin font400 {
+    font-family: Golos Text;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin font500 {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin font600 {
+    font-family: Golos Text;
+    font-weight: 600;
+    font-style: normal;
+}
+@mixin font700 {
+    font-family: Golos Text;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin subTitleText {
+    text-align: center;
+    font-size: $primary-font-size-p-24;
+    margin-top: 26px;
+    color: $primary-color-text;
+    @include font500;
+}
+
+$mt: 60px;
+
+$primary-color-1: #f79f00;
+$primary-color-2: #fd0000;
+$primary-color-text: #3d3d3d;
+$primary-color-text-input: #686868;
+$primary-color-textBtn: #ffff;
+
+$primary-font-size-h2-20: clamp(18px, 1.7vw, 20px);
+$primary-font-size-h2: clamp(22px, 4.1vw, 48px);
+$primary-font-size-h4: clamp(18px, 4.1vw, 36px);
+$primary-font-size-h4-20: clamp(18px, 1.7vw, 20px);
+
+$primary-font-size-p-24: clamp(18px, 2vw, 24px);
+$primary-font-size-p-17: clamp(14px, 1.4vw, 17px);
+
+$font-size-22-48: clamp(22px, 4.1vw, 48px);
+$font-size-18-36: clamp(18px, 4.1vw, 36px);
+$font-size-18-24: clamp(18px, 2vw, 24px);
+$font-size-18-20: clamp(18px, 1.7vw, 20px);
+$font-size-16-18: clamp(16px, 1.5vw, 18px);
+$font-size-14-17: clamp(14px, 1.4vw, 17px);

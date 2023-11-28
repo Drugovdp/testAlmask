@@ -1,0 +1,74 @@
+@import '../styleMixin/styleMixin.scss';
+
+.sectionAbout {
+    margin-top: $mt;
+}
+
+.contentAbout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4%;
+}
+
+.photoLarge {
+    min-width: 316px;
+    height: 100%;
+
+    img {
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+.content {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photoSmall {
+    display: none;
+}
+
+.text {
+    font-size: clamp(13px, 1.5vw, 17px);
+    font-family: Montserrat, sans-serif;
+    color: $primary-color-text;
+    line-height: 1.4;
+    p {
+        padding-top: 4%;
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photoLarge {
+        display: none;
+    }
+    .contentAbout {
+        display: block;
+    }
+    .content {
+        width: 100%;
+    }
+    .line {
+        display: none;
+    }
+    .photoSmall {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4%;
+
+        &About {
+            flex-basis: 30%;
+        }
+    }
+
+    .text {
+        font-size: clamp(13px, 2vw, 16px);
+    }
+}
