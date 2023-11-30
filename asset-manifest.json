@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testAlmask/static/css/main.22ba6493.css",
-    "main.js": "/testAlmask/static/js/main.8a0e8f4a.js",
+    "main.js": "/testAlmask/static/js/main.091eaa1c.js",
     "static/js/787.c922dae8.chunk.js": "/testAlmask/static/js/787.c922dae8.chunk.js",
     "static/media/baner3.jpg": "/testAlmask/static/media/baner3.aaf15e9bf5bae1a3a86f.jpg",
     "static/media/imgAboutMob3.jpg": "/testAlmask/static/media/imgAboutMob3.26130c67b8e73eefe6ec.jpg",
@@ -24,11 +24,11 @@
     "index.html": "/testAlmask/index.html",
     "static/media/phone.svg": "/testAlmask/static/media/phone.154432f13e5d99912aae.svg",
     "main.22ba6493.css.map": "/testAlmask/static/css/main.22ba6493.css.map",
-    "main.8a0e8f4a.js.map": "/testAlmask/static/js/main.8a0e8f4a.js.map",
+    "main.091eaa1c.js.map": "/testAlmask/static/js/main.091eaa1c.js.map",
     "787.c922dae8.chunk.js.map": "/testAlmask/static/js/787.c922dae8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22ba6493.css",
-    "static/js/main.8a0e8f4a.js"
+    "static/js/main.091eaa1c.js"
   ]
 }
