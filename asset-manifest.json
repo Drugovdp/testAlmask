@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testAlmask/static/css/main.fe64abc4.css",
+    "main.css": "/testAlmask/static/css/main.7b3add9d.css",
     "main.js": "/testAlmask/static/js/main.2ac19d17.js",
     "static/js/787.c922dae8.chunk.js": "/testAlmask/static/js/787.c922dae8.chunk.js",
     "static/media/baner3.jpg": "/testAlmask/static/media/baner3.aaf15e9bf5bae1a3a86f.jpg",
@@ -24,12 +24,12 @@
     "static/media/newsImg1.jpg": "/testAlmask/static/media/newsImg1.4350d01a803d58147f4e.jpg",
     "index.html": "/testAlmask/index.html",
     "static/media/phone.svg": "/testAlmask/static/media/phone.154432f13e5d99912aae.svg",
-    "main.fe64abc4.css.map": "/testAlmask/static/css/main.fe64abc4.css.map",
+    "main.7b3add9d.css.map": "/testAlmask/static/css/main.7b3add9d.css.map",
     "main.2ac19d17.js.map": "/testAlmask/static/js/main.2ac19d17.js.map",
     "787.c922dae8.chunk.js.map": "/testAlmask/static/js/787.c922dae8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe64abc4.css",
+    "static/css/main.7b3add9d.css",
     "static/js/main.2ac19d17.js"
   ]
 }
