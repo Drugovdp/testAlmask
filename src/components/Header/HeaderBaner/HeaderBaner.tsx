@@ -5,23 +5,34 @@ import baner1 from '../../../images/baner1.jpg'
 import baner2 from '../../../images/baner2.jpg'
 import baner3 from '../../../images/baner3.jpg'
 
-import s from './HeaderBaner.module.scss'
+import './HeaderBaner.scss'
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import { Button } from '../../Button/Button'
 
-export const HeaderBaner = () => {
+type TypePropsHeaderBaner = {
+    clossedPopup: boolean
+    setClossedPopup: (clossedPopup: boolean) => void
+}
+
+export const HeaderBaner: React.FC<TypePropsHeaderBaner> = ({clossedPopup, setClossedPopup}) => {
+
+    const handlerClossed = () => {
+        setClossedPopup(false)
+    }
     return (
-        <div className={s.headerBaner}>
-            <div className={s.titleBox}>
-                <div className={s.title}>ПРОФЕССИОНАЛЬНЫЕ КУРСЫ МАССАЖА</div>
-                <div className={s.logoType}>ALMASK</div>
-                <div className={s.line}></div>
-                <div className={s.description}>Профессиональное обучение массажу для всех желающих.<br></br>
-                    Запишитесь прямо сейчас – и обучайтесь у лучших тренеров!</div>
-                <button className={s.btn}>Записаться сейчас</button>
+        <div className='headerBaner'>
+            <div className='titleBox'>
+                <div className='title'>АЛМАСК - Академия Массажа, СПА и Психологии</div>
+                <div className='logoType'>ALMASK</div>
+                <div className='line'></div>
+                <div className='description'>Получите две профессии в одном курсе<br></br> МАССАЖ и СПА
+                    От Академии с лицензией РФ<br></br>
+                    Курс с нуля и для мастеров со стажем</div>
+                <Button callBack={handlerClossed}>Записаться сейчас</Button>
             </div>
-            <div className={s.gradient}>
+            <div className='gradient'>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     spaceBetween={50}

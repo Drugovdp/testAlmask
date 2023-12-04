@@ -17,6 +17,9 @@ export const Button: React.FC<TypePropsButton> = ({children, className, callBack
     }
 
   return (
-    <button className={classBtn} onClick={onClickHandler}>{children}</button>
+    <div style={{textAlign: 'center'}}>
+      <button className={classBtn} onClick={onClickHandler}>{children}</button>
+    </div>
+   
   )
 }

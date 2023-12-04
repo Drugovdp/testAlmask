@@ -1,0 +1,15 @@
+.btnContacts {
+    min-width: clamp(120px, 17vw, 200px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+
+    &WhatsApp, &Telegram, &Tel {
+        height: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

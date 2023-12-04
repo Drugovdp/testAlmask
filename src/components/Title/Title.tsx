@@ -5,9 +5,10 @@ type TypePropsTitle = {
     span?: string
     titleh4?: string
     textCentr?: boolean
+    line?: boolean
 }
 
-export const Title: React.FC<TypePropsTitle> = ({titleh2, span, titleh4, textCentr}) => {
+export const Title: React.FC<TypePropsTitle> = ({titleh2, span, titleh4, textCentr, line}) => {
 
     const className = `${'title'} ${textCentr ? 'textCenter' : ''}`
 
@@ -15,7 +16,7 @@ export const Title: React.FC<TypePropsTitle> = ({titleh2, span, titleh4, textCen
         <div className={className}>
             <h2>{titleh2} <span>{span}</span></h2>
             {titleh4 && <h4>{titleh4}</h4>}
-            <div className='line'></div>
+            {line && <div className='line'></div>}
         </div>
     )
 }
